@@ -37,7 +37,7 @@
          must be a menu. -->
     <Groups>
       <Group guid="guidLHJToolsPackageCmdSet" id="MyMenuGroup" priority="0x0600">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+        <Parent guid="guidLHJToolsPackageCmdSet" id="TopLevelMenu"/>
       </Group>
     </Groups>
 
@@ -71,6 +71,18 @@
       <Bitmap guid="guidImages" href="Resources\ColorSpoidMenu.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>
       <Bitmap guid="guidColorSpoidImage" href="Resources\web_spoid-16.png" usedList="ColorSpoidImage"/>
     </Bitmaps>
+
+    <Menus>
+      <Menu guid="guidLHJToolsPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">
+        <Parent guid="guidSHLMainMenu"
+                id="IDG_VS_MM_TOOLSADDINS" />
+        <Strings>
+          <ButtonText>LHJTools</ButtonText>
+          <CommandName>LHJTools</CommandName>
+        </Strings>
+      </Menu>
+    </Menus>
+    
   </Commands>
 
   <Symbols>
@@ -80,6 +92,7 @@
     <!-- This is the guid used to group the menu commands together -->
     <GuidSymbol name="guidLHJToolsPackageCmdSet" value="{d03bd819-a99e-48df-8671-5479c18f152f}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="TopLevelMenu" value="0x1021"/>
       <IDSymbol name="ColorSpoidMenuId" value="0x0100" />
     </GuidSymbol>
 
