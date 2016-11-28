@@ -9,7 +9,7 @@
     <UseCodebase>true</UseCodebase>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
@@ -51,7 +51,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ColorSpoidMenu.cs" />
+    <Compile Include="Menu\ColorSpoidMenu.cs" />
     <Compile Include="ColorSpoid\ColorSpoidForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,12 +59,14 @@
       <DependentUpon>ColorSpoidForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LHJToolsPackage.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Menu\TextCompareMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Key.snk" />
@@ -74,6 +76,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\1480324648_page_copy.png" />
     <None Include="Resources\web_spoid-16.png" />
     <VSCTCompile Include="LHJToolsPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
@@ -81,7 +84,7 @@
     <Content Include="1480055058_settings.png">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Resources\ColorSpoidMenu.png" />
+    <EmbeddedResource Include="LHJ.TextCompare.dll" />
     <Content Include="Resources\LHJToolsPackage.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +102,10 @@
     </Reference>
     <Reference Include="EnvDTE90, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="LHJ.TextCompare">
+      <HintPath>..\..\..\..\..\Source\Repos\LHJ.Framework\Compile\LHJ.TextCompare.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Build.Framework" />

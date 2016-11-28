@@ -42,6 +42,8 @@ namespace LHJ.Tools
     [ProvideMenuResource("Menus.ctmenu", 1)]
     public sealed class LHJToolsPackage : Package
     {
+        private static Program m_Pgm = new Program();
+
         /// <summary>
         /// LHJToolsPackage GUID string.
         /// </summary>
@@ -68,6 +70,7 @@ namespace LHJ.Tools
         {
             base.Initialize();
             LHJ.Tools.ColorSpoidMenu.Initialize(this);
+            LHJ.Tools.TextCompareMenu.Initialize(this);
         }
 
         #endregion

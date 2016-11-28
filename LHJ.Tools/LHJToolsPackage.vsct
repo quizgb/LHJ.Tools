@@ -15,10 +15,10 @@
         defining some of the constants that we will use inside the file. -->
 
   <!--This is the file that defines the IDs for all the commands exposed by VisualStudio. -->
-  <Extern href="stdidcmd.h"/>
+  <Extern href="stdidcmd.h" />
 
   <!--This header contains the command ids for the menus provided by the shell. -->
-  <Extern href="vsshlids.h"/>
+  <Extern href="vsshlids.h" />
 
   <!--The Commands section is where commands, menus, and menu groups are defined.
       This section uses a Guid to identify the package that provides the command defined inside it. -->
@@ -37,7 +37,10 @@
          must be a menu. -->
     <Groups>
       <Group guid="guidLHJToolsPackageCmdSet" id="MyMenuGroup" priority="0x0600">
-        <Parent guid="guidLHJToolsPackageCmdSet" id="TopLevelMenu"/>
+        <Parent guid="guidLHJToolsPackageCmdSet" id="TopLevelMenu" />
+      </Group>
+      <Group guid="guidLHJToolsPackageCmdSet1" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidLHJToolsPackageCmdSet" id="IDM_VS_MENU_TOOLS" />
       </Group>
     </Groups>
 
@@ -59,6 +62,13 @@
           <ButtonText>ColorSpoid</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidLHJToolsPackageCmdSet1" id="cmdidTextCompareMenu" priority="0x0100" type="Button">
+        <Parent guid="guidLHJToolsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidTextCompareImage" id="TextCompareImage" />
+        <Strings>
+          <ButtonText>Text Compare</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -68,14 +78,13 @@
             bitmap strip containing the bitmaps and then there are the numeric ids of the elements used
             inside a button definition. An important aspect of this declaration is that the element id
             must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
-      <Bitmap guid="guidImages" href="Resources\ColorSpoidMenu.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>
-      <Bitmap guid="guidColorSpoidImage" href="Resources\web_spoid-16.png" usedList="ColorSpoidImage"/>
+      <Bitmap guid="guidColorSpoidImage" href="Resources\web_spoid-16.png" usedList="ColorSpoidImage" />
+      <Bitmap guid="guidTextCompareImage" href="Resources\1480324648_page_copy.png" usedList="TextCompareImage" />
     </Bitmaps>
 
     <Menus>
       <Menu guid="guidLHJToolsPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">
-        <Parent guid="guidSHLMainMenu"
-                id="IDG_VS_MM_TOOLSADDINS" />
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
         <Strings>
           <ButtonText>LHJTools</ButtonText>
           <CommandName>LHJTools</CommandName>
@@ -92,21 +101,21 @@
     <!-- This is the guid used to group the menu commands together -->
     <GuidSymbol name="guidLHJToolsPackageCmdSet" value="{d03bd819-a99e-48df-8671-5479c18f152f}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="TopLevelMenu" value="0x1021"/>
+      <IDSymbol name="TopLevelMenu" value="0x1021" />
       <IDSymbol name="ColorSpoidMenuId" value="0x0100" />
-    </GuidSymbol>
-
-    <GuidSymbol name="guidImages" value="{b716705f-129f-4238-a26b-29359fb9de4a}" >
-      <IDSymbol name="bmpPic1" value="1" />
-      <IDSymbol name="bmpPic2" value="2" />
-      <IDSymbol name="bmpPicSearch" value="3" />
-      <IDSymbol name="bmpPicX" value="4" />
-      <IDSymbol name="bmpPicArrows" value="5" />
-      <IDSymbol name="bmpPicStrikethrough" value="6" />
     </GuidSymbol>
 
     <GuidSymbol name="guidColorSpoidImage" value="{AA258BD5-FBE9-4601-A9CB-9ECF885EACD0}">
       <IDSymbol name="ColorSpoidImage" value="1" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{bc4639c6-2a5b-486c-88a2-2e7df7fc3a94}" name="guidLHJToolsPackageCmdSet1">
+      <IDSymbol value="4128" name="MyMenuGroup" />
+      <IDSymbol value="256" name="cmdidTextCompareMenu" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidTextCompareImage" value="{B65B1CD3-A8F7-4645-A103-5BE27EDAA1A5}">
+      <IDSymbol name="TextCompareImage" value="1" />
     </GuidSymbol>
   </Symbols>
 </CommandTable>

@@ -63,6 +63,16 @@ namespace LHJ.Tools.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _1480324648_page_copy {
+            get {
+                object obj = ResourceManager.GetObject("_1480324648_page_copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap web_spoid_16 {
             get {
                 object obj = ResourceManager.GetObject("web_spoid_16", resourceCulture);
