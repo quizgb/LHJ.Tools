@@ -14,6 +14,7 @@ namespace LHJ.Tools.ColorSpoid
     public partial class FrmColorSpoid : Form
     {
         #region 1.Variable
+        private System.Windows.Forms.Button mButton;
         private System.Windows.Forms.Label mLabel;
         private System.Windows.Forms.Panel mPanel;
         private Thread mThread;
@@ -38,7 +39,17 @@ namespace LHJ.Tools.ColorSpoid
 
 
         #region 4.Override Method
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            switch (keyData)
+            {
+                case Keys.F4:
+                    this.mButton.PerformClick();
+                    break;
+            }
 
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
         #endregion 4.Override Method
 
 
@@ -56,9 +67,18 @@ namespace LHJ.Tools.ColorSpoid
         #region 6.Method
         private void Design()
         {
+            this.mButton = new Button();
             this.mLabel = new System.Windows.Forms.Label();
             this.mPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            //
+            // button1
+            //
+            this.mButton.Size = new Size(120, 20);
+            this.mButton.TabIndex = 2;
+            this.mButton.Location = new Point(12, 100);
+            this.mButton.Text = "[F4]Copy RGB";
+            this.mButton.Click += new EventHandler(this.Button_Click);
             // 
             // label1
             // 
@@ -76,14 +96,15 @@ namespace LHJ.Tools.ColorSpoid
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mPanel);
             this.Controls.Add(this.mLabel);
+            this.Controls.Add(this.mButton);
             this.Text = "Spoid";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
-            System.Drawing.Size sz = new Size(170, 125);
+            System.Drawing.Size sz = new Size(170, 160);
             this.MaximumSize = sz;
             this.MinimumSize = sz;
             this.PerformLayout();
@@ -184,5 +205,11 @@ namespace LHJ.Tools.ColorSpoid
             this.mThread.Abort();
         }
         #endregion 7.Event
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            Color colorBuff = ScreenColor(System.Windows.Forms.Control.MousePosition.X, System.Windows.Forms.Control.MousePosition.Y);
+            Clipboard.SetDataObject(string.Format("{0}, {1}, {2}", colorBuff.R.ToString(), colorBuff.G.ToString(), colorBuff.B.ToString()));
+        }
     }
 }
