@@ -74,6 +74,7 @@ namespace LHJ.Tools
             LHJ.Tools.devCmdMenu.Initialize(this);
             LHJ.Tools.OpenContainingFolder.Initialize(this);
             LHJ.Tools.OpenOutputFolderMenu.Initialize(this);
+            LHJ.Tools.CollapseMenu.Initialize(this);
         }
 
         #endregion

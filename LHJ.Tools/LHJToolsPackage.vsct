@@ -63,6 +63,9 @@
       <Group guid="guidLHJToolsPackageCmdSet4" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
       </Group>
+      <Group guid="guidLHJToolsPackageCmdSet5" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN" />
+      </Group>
     </Groups>
 
     <!--Buttons section. -->
@@ -111,6 +114,13 @@
           <ButtonText>[LHJ.TOOLS]Open Output Folder</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidLHJToolsPackageCmdSet5" id="cmdidCollapseMenu" priority="0x0100" type="Button">
+        <Parent guid="guidLHJToolsPackageCmdSet5" id="MyMenuGroup" />
+        <Icon guid="guidCollapseMenuImage" id="CollapseMenuImage" />
+        <Strings>
+          <ButtonText>[LHJ.Tools]Collapse Selection Node</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -125,6 +135,7 @@
       <Bitmap guid="guidDevCmdImage" href="Resources\1480425334_openterm.png" usedList="DevCmdImage" />
       <Bitmap guid="guidOpenContainingFolderImage" href="Resources\1480428134_Open.png" usedList="OpenContainingFolderImage" />
       <Bitmap guid="guidOpenOutputFolderImage" href="Resources\1480490510_Folder.png" usedList="OpenOutputFolderImage" />
+      <Bitmap guid="guidCollapseMenuImage" href="Resources\1480510929_129.png" usedList="CollapseMenuImage" />
     </Bitmaps>
 
     <Menus>
@@ -188,6 +199,15 @@
     
     <GuidSymbol name="guidOpenOutputFolderImage" value="{AD21F2BD-1908-46B7-AA31-CE4FA18783CF}">
       <IDSymbol name="OpenOutputFolderImage" value="1" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{e8bb2998-d8b2-4da4-aa6e-b8cf41f33cfc}" name="guidLHJToolsPackageCmdSet5">
+      <IDSymbol value="4128" name="MyMenuGroup" />
+      <IDSymbol value="256" name="cmdidCollapseMenu" />
+    </GuidSymbol>
+  
+    <GuidSymbol name="guidCollapseMenuImage" value="{D4481A8B-76F3-4A0E-98BA-2F284808CBF9}">
+      <IDSymbol name="CollapseMenuImage" value="1" />
     </GuidSymbol>
   </Symbols>
 </CommandTable>

@@ -54,6 +54,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Common\ErrorUtilities.cs" />
+    <Compile Include="Menu\CollapseMenu.cs" />
     <Compile Include="Common\Folders.cs" />
     <Compile Include="Menu\DevCmdMenu.cs" />
     <Compile Include="Menu\ColorSpoidMenu.cs" />
@@ -96,6 +98,7 @@
     </Content>
     <EmbeddedResource Include="LHJ.TextCompare.dll" />
     <None Include="Resources\1480425334_openterm.png" />
+    <None Include="Resources\1480510929_129.png" />
     <Content Include="Resources\LHJToolsPackage.ico" />
   </ItemGroup>
   <ItemGroup>
