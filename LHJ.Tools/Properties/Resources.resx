@@ -124,4 +124,13 @@
   <data name="_1480324648_page_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1480324648_page_copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_1480425334_openterm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1480425334_openterm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1480428134_Open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1480428134_Open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1480490510_Folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1480490510_Folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

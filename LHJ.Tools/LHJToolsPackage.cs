@@ -43,7 +43,7 @@ namespace LHJ.Tools
     public sealed class LHJToolsPackage : Package
     {
         private static Program m_Pgm = new Program();
-
+        
         /// <summary>
         /// LHJToolsPackage GUID string.
         /// </summary>
@@ -71,6 +71,9 @@ namespace LHJ.Tools
             base.Initialize();
             LHJ.Tools.ColorSpoidMenu.Initialize(this);
             LHJ.Tools.TextCompareMenu.Initialize(this);
+            LHJ.Tools.devCmdMenu.Initialize(this);
+            LHJ.Tools.OpenContainingFolder.Initialize(this);
+            LHJ.Tools.OpenOutputFolderMenu.Initialize(this);
         }
 
         #endregion

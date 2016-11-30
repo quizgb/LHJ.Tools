@@ -73,6 +73,36 @@ namespace LHJ.Tools.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _1480425334_openterm {
+            get {
+                object obj = ResourceManager.GetObject("_1480425334_openterm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1480428134_Open {
+            get {
+                object obj = ResourceManager.GetObject("_1480428134_Open", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1480490510_Folder {
+            get {
+                object obj = ResourceManager.GetObject("_1480490510_Folder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap web_spoid_16 {
             get {
                 object obj = ResourceManager.GetObject("web_spoid_16", resourceCulture);

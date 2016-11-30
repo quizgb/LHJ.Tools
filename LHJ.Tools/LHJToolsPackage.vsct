@@ -42,6 +42,27 @@
       <Group guid="guidLHJToolsPackageCmdSet1" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidLHJToolsPackageCmdSet" id="IDM_VS_MENU_TOOLS" />
       </Group>
+      <Group guid="guidLHJToolsPackageCmdSet2" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" />
+      </Group>
+      <Group guid="guidLHJToolsPackageCmdSet2" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE" />
+      </Group>
+      <Group guid="guidLHJToolsPackageCmdSet3" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" />
+      </Group>
+      <Group guid="guidLHJToolsPackageCmdSet3" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE" />
+      </Group>
+      <Group guid="guidLHJToolsPackageCmdSet3" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
+      </Group>
+      <Group guid="guidLHJToolsPackageCmdSet3" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" />
+      </Group>
+      <Group guid="guidLHJToolsPackageCmdSet4" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
+      </Group>
     </Groups>
 
     <!--Buttons section. -->
@@ -69,6 +90,27 @@
           <ButtonText>Text Compare</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidLHJToolsPackageCmdSet2" id="cmdiddevCmdMenu" priority="0x0100" type="Button">
+        <Parent guid="guidLHJToolsPackageCmdSet2" id="MyMenuGroup" />
+        <Icon guid="guidDevCmdImage" id="DevCmdImage" />
+        <Strings>
+          <ButtonText>[LHJ.TOOLS]Open Command Prompt</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidLHJToolsPackageCmdSet3" id="cmdidOpenContainingFolder" priority="0x0100" type="Button">
+        <Parent guid="guidLHJToolsPackageCmdSet3" id="MyMenuGroup" />
+        <Icon guid="guidOpenContainingFolderImage" id="OpenContainingFolderImage" />
+        <Strings>
+          <ButtonText>[LHJ.TOOLS]Open Containing Folder</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidLHJToolsPackageCmdSet4" id="cmdidOpenOutputFolderMenu" priority="0x0100" type="Button">
+        <Parent guid="guidLHJToolsPackageCmdSet4" id="MyMenuGroup" />
+        <Icon guid="guidOpenOutputFolderImage" id="OpenOutputFolderImage" />
+        <Strings>
+          <ButtonText>[LHJ.TOOLS]Open Output Folder</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -80,6 +122,9 @@
             must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
       <Bitmap guid="guidColorSpoidImage" href="Resources\web_spoid-16.png" usedList="ColorSpoidImage" />
       <Bitmap guid="guidTextCompareImage" href="Resources\1480324648_page_copy.png" usedList="TextCompareImage" />
+      <Bitmap guid="guidDevCmdImage" href="Resources\1480425334_openterm.png" usedList="DevCmdImage" />
+      <Bitmap guid="guidOpenContainingFolderImage" href="Resources\1480428134_Open.png" usedList="OpenContainingFolderImage" />
+      <Bitmap guid="guidOpenOutputFolderImage" href="Resources\1480490510_Folder.png" usedList="OpenOutputFolderImage" />
     </Bitmaps>
 
     <Menus>
@@ -116,6 +161,33 @@
 
     <GuidSymbol name="guidTextCompareImage" value="{B65B1CD3-A8F7-4645-A103-5BE27EDAA1A5}">
       <IDSymbol name="TextCompareImage" value="1" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{f4a4ef3b-78d7-432a-8fff-999d3ab319e7}" name="guidLHJToolsPackageCmdSet2">
+      <IDSymbol value="4128" name="MyMenuGroup" />
+      <IDSymbol value="256" name="cmdiddevCmdMenu" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidDevCmdImage" value="{3D2591E6-425C-4C65-B88B-4A303ABF28A8}">
+      <IDSymbol name="DevCmdImage" value="1" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{430d0ca9-4380-4932-b829-b2752996f62a}" name="guidLHJToolsPackageCmdSet3">
+      <IDSymbol value="4128" name="MyMenuGroup" />
+      <IDSymbol value="256" name="cmdidOpenContainingFolder" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidOpenContainingFolderImage" value="{6E4896FC-96B7-4AD2-B639-A604753F8F21}">
+      <IDSymbol name="OpenContainingFolderImage" value="1" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{aabd96d7-d1ff-4d6a-8fa4-ff756f70c853}" name="guidLHJToolsPackageCmdSet4">
+      <IDSymbol value="4128" name="MyMenuGroup" />
+      <IDSymbol value="256" name="cmdidOpenOutputFolderMenu" />
+    </GuidSymbol>
+    
+    <GuidSymbol name="guidOpenOutputFolderImage" value="{AD21F2BD-1908-46B7-AA31-CE4FA18783CF}">
+      <IDSymbol name="OpenOutputFolderImage" value="1" />
     </GuidSymbol>
   </Symbols>
 </CommandTable>
