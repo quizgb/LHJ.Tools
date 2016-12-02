@@ -66,6 +66,15 @@
       <Group guid="guidLHJToolsPackageCmdSet5" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN" />
       </Group>
+      <Group guid="guidLHJToolsPackageCmdSet6" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_REFERENCE" />
+      </Group>
+      <Group guid="guidLHJToolsPackageCmdSet7" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_REFERENCEROOT" />
+      </Group>
+      <Group guid="guidLHJToolsPackageCmdSet8" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
+      </Group>
     </Groups>
 
     <!--Buttons section. -->
@@ -121,6 +130,27 @@
           <ButtonText>[LHJ.Tools]Collapse Selection Node</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidLHJToolsPackageCmdSet6" id="cmdidCopyRefMenu" priority="0x0100" type="Button">
+        <Parent guid="guidLHJToolsPackageCmdSet6" id="MyMenuGroup" />
+        <Icon guid="guidDllImage" id="DllImage" />
+        <Strings>
+          <ButtonText>[LHJ.Tools]Copy Reference</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidLHJToolsPackageCmdSet7" id="cmdidPasteRefMenu" priority="0x0100" type="Button">
+        <Parent guid="guidLHJToolsPackageCmdSet7" id="MyMenuGroup" />
+        <Icon guid="guidDllImage" id="DllImage" />
+        <Strings>
+          <ButtonText>[LHJ.Tools]Paste Reference</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidLHJToolsPackageCmdSet8" id="cmdidCopyProjRefMenu" priority="0x0100" type="Button">
+        <Parent guid="guidLHJToolsPackageCmdSet8" id="MyMenuGroup" />
+        <Icon guid="guidDllImage" id="DllImage" />
+        <Strings>
+          <ButtonText>[LHJ.Tools]Copy Project References</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -136,6 +166,7 @@
       <Bitmap guid="guidOpenContainingFolderImage" href="Resources\1480428134_Open.png" usedList="OpenContainingFolderImage" />
       <Bitmap guid="guidOpenOutputFolderImage" href="Resources\1480490510_Folder.png" usedList="OpenOutputFolderImage" />
       <Bitmap guid="guidCollapseMenuImage" href="Resources\1480510929_129.png" usedList="CollapseMenuImage" />
+      <Bitmap guid="guidDllImage" href="Resources\1480690378_file_extension_dll.png" usedList="DllImage" />
     </Bitmaps>
 
     <Menus>
@@ -209,5 +240,25 @@
     <GuidSymbol name="guidCollapseMenuImage" value="{D4481A8B-76F3-4A0E-98BA-2F284808CBF9}">
       <IDSymbol name="CollapseMenuImage" value="1" />
     </GuidSymbol>
+  
+    <GuidSymbol value="{a25befdb-b45e-448c-831b-3945825a979c}" name="guidLHJToolsPackageCmdSet6">
+      <IDSymbol value="4128" name="MyMenuGroup" />
+      <IDSymbol value="256" name="cmdidCopyRefMenu" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidDllImage" value="{BC009118-7828-4349-AD91-6811092EB9D6}">
+      <IDSymbol name="DllImage" value="1" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{0ee4e64b-a559-4da8-9aa9-9156352cc3ef}" name="guidLHJToolsPackageCmdSet7">
+      <IDSymbol value="4128" name="MyMenuGroup" />
+      <IDSymbol value="256" name="cmdidPasteRefMenu" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{761062b7-a106-438d-949e-41c3d4f74611}" name="guidLHJToolsPackageCmdSet8">
+      <IDSymbol value="4128" name="MyMenuGroup" />
+      <IDSymbol value="256" name="cmdidCopyProjRefMenu" />
+    </GuidSymbol>
+  
   </Symbols>
 </CommandTable>
