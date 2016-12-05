@@ -78,6 +78,8 @@ namespace LHJ.Tools
             LHJ.Tools.CopyRefMenu.Initialize(this);
             LHJ.Tools.PasteRefMenu.Initialize(this);
             LHJ.Tools.CopyProjRefMenu.Initialize(this);
+            LHJ.Tools.LocalCopySetFalseProjMenu.Initialize(this);
+            LHJ.Tools.LocalCopySetFalseSlnMenu.Initialize(this);
         }
 
         #endregion

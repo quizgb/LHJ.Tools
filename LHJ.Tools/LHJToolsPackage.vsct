@@ -75,6 +75,12 @@
       <Group guid="guidLHJToolsPackageCmdSet8" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
       </Group>
+      <Group guid="guidLHJToolsPackageCmdSet9" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
+      </Group>
+      <Group guid="guidLHJToolsPackageCmdSet10" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" />
+      </Group>
     </Groups>
 
     <!--Buttons section. -->
@@ -127,28 +133,42 @@
         <Parent guid="guidLHJToolsPackageCmdSet5" id="MyMenuGroup" />
         <Icon guid="guidCollapseMenuImage" id="CollapseMenuImage" />
         <Strings>
-          <ButtonText>[LHJ.Tools]Collapse Selection Node</ButtonText>
+          <ButtonText>[LHJ.TOOLS]Collapse Selection Node</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidLHJToolsPackageCmdSet6" id="cmdidCopyRefMenu" priority="0x0100" type="Button">
         <Parent guid="guidLHJToolsPackageCmdSet6" id="MyMenuGroup" />
         <Icon guid="guidDllImage" id="DllImage" />
         <Strings>
-          <ButtonText>[LHJ.Tools]Copy Reference</ButtonText>
+          <ButtonText>[LHJ.TOOLS]Copy Reference</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidLHJToolsPackageCmdSet7" id="cmdidPasteRefMenu" priority="0x0100" type="Button">
         <Parent guid="guidLHJToolsPackageCmdSet7" id="MyMenuGroup" />
         <Icon guid="guidDllImage" id="DllImage" />
         <Strings>
-          <ButtonText>[LHJ.Tools]Paste Reference</ButtonText>
+          <ButtonText>[LHJ.TOOLS]Paste Reference</ButtonText>
         </Strings>
       </Button>
       <Button guid="guidLHJToolsPackageCmdSet8" id="cmdidCopyProjRefMenu" priority="0x0100" type="Button">
         <Parent guid="guidLHJToolsPackageCmdSet8" id="MyMenuGroup" />
         <Icon guid="guidDllImage" id="DllImage" />
         <Strings>
-          <ButtonText>[LHJ.Tools]Copy Project References</ButtonText>
+          <ButtonText>[LHJ.TOOLS]Copy Project References</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidLHJToolsPackageCmdSet9" id="cmdidLocalCopySetFalseProjMenu" priority="0x0100" type="Button">
+        <Parent guid="guidLHJToolsPackageCmdSet9" id="MyMenuGroup" />
+        <Icon guid="guidLocalCopyImage" id="LocalCopyImage" />
+        <Strings>
+          <ButtonText>[LHJ.TOOLS]Set LocalCopy False Project References</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidLHJToolsPackageCmdSet10" id="cmdidLocalCopySetFalseSlnMenu" priority="0x0100" type="Button">
+        <Parent guid="guidLHJToolsPackageCmdSet10" id="MyMenuGroup" />
+        <Icon guid="guidLocalCopyImage" id="LocalCopyImage" />
+        <Strings>
+          <ButtonText>[LHJ.TOOLS]Set LocalCopy False Solution References</ButtonText>
         </Strings>
       </Button>
     </Buttons>
@@ -167,6 +187,7 @@
       <Bitmap guid="guidOpenOutputFolderImage" href="Resources\1480490510_Folder.png" usedList="OpenOutputFolderImage" />
       <Bitmap guid="guidCollapseMenuImage" href="Resources\1480510929_129.png" usedList="CollapseMenuImage" />
       <Bitmap guid="guidDllImage" href="Resources\1480690378_file_extension_dll.png" usedList="DllImage" />
+      <Bitmap guid="guidLocalCopyImage" href="Resources\1480936177_filetypes.png" usedList="LocalCopyImage" />
     </Bitmaps>
 
     <Menus>
@@ -260,5 +281,19 @@
       <IDSymbol value="256" name="cmdidCopyProjRefMenu" />
     </GuidSymbol>
   
+    <GuidSymbol value="{d861a9dd-ce34-4f4f-9b58-d584450c0262}" name="guidLHJToolsPackageCmdSet9">
+      <IDSymbol value="4128" name="MyMenuGroup" />
+      <IDSymbol value="256" name="cmdidLocalCopySetFalseProjMenu" />
+    </GuidSymbol>
+    
+    <GuidSymbol name="guidLocalCopyImage" value="{4CB2E996-899D-498A-8F26-4616557A81F4}">
+      <IDSymbol name="LocalCopyImage" value="1" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{d0aa557a-b8c5-4289-8fe9-12b79f45d788}" name="guidLHJToolsPackageCmdSet10">
+      <IDSymbol value="4128" name="MyMenuGroup" />
+      <IDSymbol value="256" name="cmdidLocalCopySetFalseSlnMenu" />
+    </GuidSymbol>
+
   </Symbols>
 </CommandTable>

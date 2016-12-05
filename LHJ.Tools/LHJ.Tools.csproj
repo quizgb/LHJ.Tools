@@ -54,8 +54,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Common\SolutionHelper.cs" />
+    <Compile Include="Common\Comm.cs" />
+    <Compile Include="Common\ReferencesHelper.cs" />
     <Compile Include="Common\Global.cs" />
     <Compile Include="Common\ErrorUtilities.cs" />
+    <Compile Include="Menu\LocalCopySetFalseSlnMenu.cs" />
+    <Compile Include="Menu\LocalCopySetFalseProjMenu.cs" />
     <Compile Include="Menu\CopyProjRefMenu.cs" />
     <Compile Include="Menu\CopyRefMenu.cs" />
     <Compile Include="Menu\CollapseMenu.cs" />
@@ -89,6 +94,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\1480936177_filetypes.png" />
     <None Include="Resources\1480690378_file_extension_dll.png" />
     <None Include="Resources\1480490510_Folder.png" />
     <None Include="Resources\1480428134_Open.png" />
