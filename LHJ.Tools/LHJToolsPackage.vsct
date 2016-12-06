@@ -194,8 +194,8 @@
       <Menu guid="guidLHJToolsPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">
         <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
         <Strings>
-          <ButtonText>LHJTools</ButtonText>
-          <CommandName>LHJTools</CommandName>
+          <ButtonText>LHJ.Tools</ButtonText>
+          <CommandName>LHJ.Tools</CommandName>
         </Strings>
       </Menu>
     </Menus>

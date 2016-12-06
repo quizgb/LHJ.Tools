@@ -118,13 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="110" xml:space="preserve">
-    <value>LH.JTools</value>
+    <value>LHJ.Tools</value>
   </data>
   <data name="112" xml:space="preserve">
-    <value>Visual Studio Add In</value>
+    <value>Visual Studio Add In\r\n1. Color Spoid\r\n2. Text Compare\r\n3. Solution Explore Context Menu -&gt; Open Command Prompt\r\n4. Solution Explore Button -&gt; Collapse Selection Node</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="1400" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\LHJToolsPackage.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>1. Color Spoid</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>2. Text Compare</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>3. Solution Explore Context Menu -&gt; Open Command Prompt</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>4. Solution Explore Button -&gt; Collapse Selection Node</value>
   </data>
 </root>
