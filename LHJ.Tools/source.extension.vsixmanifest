@@ -4,7 +4,7 @@
     <Name>LHJ.Tools</Name>
     <Author>이호준</Author>
     <Version>1.0</Version>
-    <Description xml:space="preserve">LHJ.Tools Package</Description>
+    <Description xml:space="preserve">Visual Studio Add In.</Description>
     <Locale>1033</Locale>
     <PreviewImage>1480055058_settings.png</PreviewImage>
     <InstalledByMsi>false</InstalledByMsi>
