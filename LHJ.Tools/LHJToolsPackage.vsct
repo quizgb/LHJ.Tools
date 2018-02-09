@@ -81,6 +81,9 @@
       <Group guid="guidLHJToolsPackageCmdSet10" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" />
       </Group>
+      <Group guid="guidLHJToolsPackageCmdSet11" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidLHJToolsPackageCmdSet" id="IDM_VS_MENU_TOOLS" />
+      </Group>
     </Groups>
 
     <!--Buttons section. -->
@@ -171,7 +174,15 @@
           <ButtonText>[LHJ.TOOLS]Set LocalCopy False Solution References</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidLHJToolsPackageCmdSet11" id="cmdidSetPrjLocalCopyFalseMenu" priority="0x0100" type="Button">
+        <Parent guid="guidLHJToolsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidTextCompareImage" id="TextCompareImage" />
+        <Strings>
+          <ButtonText>Set Project Local Copy False</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
+
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
     <Bitmaps>
@@ -293,6 +304,11 @@
     <GuidSymbol value="{d0aa557a-b8c5-4289-8fe9-12b79f45d788}" name="guidLHJToolsPackageCmdSet10">
       <IDSymbol value="4128" name="MyMenuGroup" />
       <IDSymbol value="256" name="cmdidLocalCopySetFalseSlnMenu" />
+    </GuidSymbol>
+
+    <GuidSymbol value="{0A93CEB2-A3EB-4D4C-A4BE-7F6A194AFBA4}" name="guidLHJToolsPackageCmdSet11">
+      <IDSymbol value="4128" name="MyMenuGroup" />
+      <IDSymbol value="256" name="cmdidSetPrjLocalCopyFalseMenu" />
     </GuidSymbol>
 
   </Symbols>
