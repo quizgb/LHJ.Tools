@@ -176,7 +176,7 @@
       </Button>
       <Button guid="guidLHJToolsPackageCmdSet11" id="cmdidSetPrjLocalCopyFalseMenu" priority="0x0100" type="Button">
         <Parent guid="guidLHJToolsPackageCmdSet" id="MyMenuGroup" />
-        <Icon guid="guidTextCompareImage" id="TextCompareImage" />
+        <Icon guid="guidLocalCopyImage" id="LocalCopyImage" />
         <Strings>
           <ButtonText>Set Project Local Copy False</ButtonText>
         </Strings>
